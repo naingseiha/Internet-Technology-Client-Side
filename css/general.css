@@ -2,4 +2,78 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #555;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 2.5rem;
+}
+
+/***********************/
+/*------- Header -------/
+/***********************/
+
+header {
+  height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding: 0 2.5rem;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.logo {
+  text-decoration: none;
+  cursor: pointer;
+
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.logo:hover {
+  color: #444;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navbar-link a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-link a:hover,
+.navbar-link a:active {
+  color: #222;
+
+  text-shadow: 1px 1px 1px rgb(215, 212, 212);
+}
+
+/***********************/
+/*------- MAIN -------/
+/***********************/
+
+main {
+  height: 100vh;
+  /* margin-top: 3.5rem; */
+}
+.project-title {
+  font-size: 2.5rem;
+  text-align: center;
+
+  /* margin-top: 2.5rem; */
 }
