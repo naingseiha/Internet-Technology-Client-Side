@@ -79,6 +79,16 @@ p {
   border: 2px solid darkgoldenrod;
 }
 
+.welcome-text button:hover,
+.welcome-text button:active {
+  cursor: pointer;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)
+  );
+}
+
 @media (max-width: 1536px) {
   .hero-section {
     width: 100vw;
@@ -105,7 +115,8 @@ p {
 /***********************/
 
 .gallery {
-  height: 100vh;
+  /* height: 100vh; */
+  padding-top: 2.5rem;
   /* scroll-snap-align: start; */
 }
 
