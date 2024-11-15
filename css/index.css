@@ -1,0 +1,129 @@
+/***********************/
+/*------- MAIN -------/
+/***********************/
+
+.project-title {
+  font-size: 2.5rem;
+  text-align: center;
+
+  margin: 2.5rem 0;
+}
+
+/***********************/
+/*-- 1. HERO SECTION  --/
+/***********************/
+
+main {
+  /* width: 100vw;
+  height: 100vh;
+
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory; */
+}
+
+.hero-section {
+  width: 100vw;
+  height: 100vh;
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets//gallery/Angkor3.jpg");
+  background-size: cover;
+  position: relative;
+
+  background-attachment: fixed;
+  scroll-snap-align: start;
+}
+
+.welcome-text {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
+  max-width: 750px;
+  height: 300px;
+  padding: 1.2rem 1.8rem;
+
+  position: absolute;
+  top: 9.5rem;
+  left: 2.5rem;
+}
+
+.welcome-text button,
+h1,
+p {
+  color: white;
+  flex-wrap: nowrap;
+  margin-bottom: 1.2rem;
+}
+
+.welcome-text h1 {
+  font-size: 2.8rem;
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+.welcome-text button {
+  padding: 1rem 2.8rem;
+  color: white;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
+
+  border: 2px solid darkgoldenrod;
+}
+
+@media (max-width: 1536px) {
+  .hero-section {
+    width: 100vw;
+    height: 90vh;
+  }
+}
+
+@media (max-width: 1280px) {
+  .hero-section {
+    width: 100vw;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-section {
+    width: 100vw;
+    height: 70vh;
+  }
+}
+
+/***********************/
+/*-- 1. IMAGE GALLERY --/
+/***********************/
+
+.gallery {
+  height: 100vh;
+  /* scroll-snap-align: start; */
+}
+
+.gallery h1 {
+  color: #333;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+}
+
+.image-container {
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 100%;
+}
