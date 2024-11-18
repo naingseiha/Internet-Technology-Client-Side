@@ -80,6 +80,11 @@ header {
   color: #bbb;
 }
 
+.hamburger-icon {
+  display: none;
+}
+
+/* 
 @media (max-width: 1280px) {
   .navbar-link:link,
   .navbar-link:visited {
@@ -92,7 +97,7 @@ header {
   .navbar-link:visited {
     font-size: 1rem;
   }
-}
+} */
 
 .hero-section {
   width: 100vw;
@@ -161,4 +166,102 @@ header {
     rgba(0, 0, 0, 0.1),
     rgba(0, 0, 0, 0.1)
   );
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .nav {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+    position: relative;
+    width: 1.8rem;
+
+    top: 0.6rem;
+    left: 1rem;
+  }
+
+  .hamburger-icon:hover,
+  .hamburger-icon:active {
+    cursor: pointer;
+  }
+
+  .hero-section {
+    width: 100vw;
+    height: 270px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .welcome-text {
+    height: 11.5rem;
+    max-width: 400px;
+    padding: 0.8rem;
+    top: 3.5rem;
+    left: 0.5rem;
+  }
+
+  .welcome-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .welcome-text button {
+    padding: 0.4rem 1.2rem;
+    font-size: 0.6rem;
+  }
+
+  .welcome-text p {
+    font-size: 0.7rem;
+    line-height: 1.3;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .hero-section {
+    width: 100vw;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .hamburger-icon {
+    display: block;
+    position: relative;
+    width: 1.8rem;
+
+    top: 0.6rem;
+    left: 1rem;
+  }
+
+  .welcome-text {
+    height: 17rem;
+    max-width: 590px;
+    padding: 0.8rem;
+    top: 3.5rem;
+    left: 1rem;
+  }
+
+  .welcome-text h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar-link:link,
+  .navbar-link:visited {
+    font-size: 1.2rem;
+  }
+
+  .hero-section {
+    width: 100vw;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }

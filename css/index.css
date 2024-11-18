@@ -21,27 +21,6 @@ main {
   scroll-snap-type: y mandatory; */
 }
 
-@media (max-width: 1536px) {
-  .hero-section {
-    width: 100vw;
-    height: 90vh;
-  }
-}
-
-@media (max-width: 1280px) {
-  .hero-section {
-    width: 100vw;
-    height: 80vh;
-  }
-}
-
-@media (max-width: 1024px) {
-  .hero-section {
-    width: 100vw;
-    height: 70vh;
-  }
-}
-
 /***********************/
 /*-- 1. IMAGE GALLERY --/
 /***********************/
@@ -211,4 +190,41 @@ main {
 .footer {
   background: #eee;
   height: 12rem;
+}
+
+/***********************/
+/*-- MOBILE RESPONSIVE -/
+/***********************/
+
+@media (max-width: 640px) {
+  .image-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1.2rem;
+    padding: 1.5rem 0.8rem;
+  }
+
+  .top-gallery h1 {
+    font-size: 1.8rem;
+  }
+
+  .local-product h1 {
+    font-size: 1.8rem;
+  }
+
+  .product-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.2rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .product-container {
+    height: 13rem;
+  }
+
+  .product-container:last-child {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
 }
