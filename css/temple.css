@@ -1,0 +1,98 @@
+.temple-text {
+  color: white;
+
+  position: absolute;
+  left: 3.5rem;
+  bottom: 5.5rem;
+}
+
+.temples {
+  margin: 4.5rem 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.temple-info h1 {
+  margin-bottom: 1.2rem;
+}
+
+.temple-info p {
+  margin-bottom: 1rem;
+}
+
+.temple-info button {
+  padding: 1rem 2.5rem;
+  background: none;
+  border: 2px solid #333;
+}
+
+.temple-image img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.local-product-top-gallery {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.local-product-top-gallery h1 {
+  color: #fc9b00;
+}
+
+.local-product-top-gallery p {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.local-product-top-gallery button {
+  border: 2px solid #555;
+  padding: 0.5rem 3.5rem;
+  background: none;
+}
+
+.top-gallery button:hover {
+  cursor: pointer;
+}
+
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.2rem;
+  padding: 1.5rem 3.5rem;
+}
+
+.product-container {
+  margin-bottom: 20px;
+  height: 19rem;
+  position: relative;
+}
+
+.product-container .product-info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  padding: 1rem;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+  color: white;
+}
+
+.product-gallery .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

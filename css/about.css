@@ -1,0 +1,33 @@
+.hero-section .about-text {
+  color: white;
+
+  position: absolute;
+  left: 3.5rem;
+  bottom: 5.5rem;
+}
+
+.about {
+  padding: 3.5rem;
+  display: flex;
+  column-gap: 3.5rem;
+}
+
+.about-info {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about .about-info p {
+  line-height: 2.3rem;
+  font-size: 1rem;
+}
+
+.about .about-image img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
