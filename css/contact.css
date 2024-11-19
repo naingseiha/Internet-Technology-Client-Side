@@ -6,12 +6,6 @@
   bottom: 5.5rem;
 }
 
-.contact {
-  padding: 2rem 3.5rem;
-  display: flex;
-  column-gap: 3.5rem;
-}
-
 .contact-info {
   padding: 1.5rem 3.5rem 0;
   display: flex;
@@ -22,45 +16,58 @@
   line-height: 2;
 }
 
-.contact-map {
-  flex: 1;
+.contact {
+  padding: 2rem 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.5rem;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid #eee;
 }
 
 .contact-form {
-  flex: 1;
-
   display: flex;
   flex-direction: column;
-  row-gap: 0.5rem;
+  row-gap: 1.5rem;
   color: #555;
 }
 
+.form-control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .input-text {
-  padding: 0.5rem 0.8rem;
-  border-radius: 8px;
+  padding: 1rem 0.8rem;
   border: 1px solid #eee;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #555;
 }
 
 .input-message {
   padding: 0.5rem 0.8rem;
-  border-radius: 8px;
   border: 1px solid #eee;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #555;
 }
 
-button {
+.contact-form button {
   width: 16rem;
-  height: 2.2rem;
+  height: 2.5rem;
   align-self: flex-end;
   background: none;
 
   border: 2px solid #eee;
 }
 
-button:hover {
+.contact-form button:hover {
   cursor: pointer;
 }
 
@@ -69,4 +76,78 @@ button:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .hero-section .about-text {
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .contact-info {
+    padding: 1.5rem 0.8rem;
+    gap: 1rem;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 1rem 0.8rem;
+  }
+
+  .contact-map {
+    height: 16rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .input-text {
+    padding: 1rem 0.5rem;
+  }
+
+  .input-message {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+    height: 2.5rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .hero-section .about-text {
+    left: 1rem;
+    bottom: 1.5rem;
+  }
+
+  .contact-info {
+    padding: 1.5rem 0.8rem;
+    gap: 1rem;
+  }
+  .contact-info p {
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 1rem 0.8rem;
+  }
+
+  .contact-map {
+    height: 16rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .input-text {
+    padding: 1rem 0.5rem;
+  }
+
+  .input-message {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+    height: 2.5rem;
+  }
 }

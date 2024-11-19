@@ -8,9 +8,18 @@
 
 .temples {
   margin: 4.5rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.temple {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+}
+
+.temple-info {
+  margin: 1.5rem 2rem;
 }
 
 .temple-info h1 {
@@ -27,6 +36,13 @@
   border: 2px solid #333;
 }
 
+.temple-info button:hover {
+  cursor: pointer;
+}
+
+.temple-image {
+  margin: 1.5rem 1rem;
+}
 .temple-image img {
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 55px,
@@ -95,4 +111,83 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .temples {
+    margin: 1rem 0.2rem;
+  }
+
+  .temple {
+    grid-template-columns: 1fr;
+    margin-bottom: 1.5rem;
+  }
+
+  .temple:nth-child(1) .temple-image {
+    order: -1;
+  }
+
+  .temple:nth-child(3) .temple-image {
+    order: -1;
+  }
+
+  .temple:nth-child(5) .temple-image {
+    order: -1;
+  }
+
+  .temple-image {
+    margin: 0;
+  }
+
+  .product-gallery {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+  }
+
+  .temple-text {
+    left: 1rem;
+    bottom: 1rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .temples {
+    margin: 1rem 0.2rem;
+  }
+
+  .temple {
+    grid-template-columns: 1fr;
+    margin-bottom: 1.5rem;
+  }
+
+  .temple:nth-child(1) .temple-image {
+    order: -1;
+  }
+
+  .temple:nth-child(3) .temple-image {
+    order: -1;
+  }
+
+  .temple:nth-child(5) .temple-image {
+    order: -1;
+  }
+
+  .temple-image {
+    margin: 0;
+  }
+
+  .product-gallery {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media (min-width: 1280px) and (max-width: 1536px) {
 }

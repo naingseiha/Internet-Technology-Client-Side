@@ -11,13 +11,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
 
     <script defer src="../js/script.js"></script>
   </head>
   <body>
+    <div class="status">
+      <span>Group Memeber</span> <span>1. Naing Seiha</span>
+      <span>2. Phon Sophea</span><span>3. Khut Virakboth</span>
+    </div>
     <header class="header">
       <!-- <a href="#" class="logo">Logo</a> -->
       <nav class="nav">
@@ -31,6 +49,10 @@
           <li><a class="navbar-link" href="about.html">ABOUT US</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <div class="hero-section">
@@ -41,105 +63,119 @@
 
       <div class="temples">
         <!-- Angkor -->
-        <div class="temple-info">
-          <h1>Angkor Wat</h1>
-          <p>Opening hour: 07:30-17:30</p>
+        <div class="temple">
+          <div class="temple-info">
+            <h1>Angkor Wat</h1>
+            <p>Opening hour: 07:30-17:30</p>
 
-          <p>
-            Angkor Wat is a temple complex in Cambodia and the largest religious
-            monument in the world, on a site measuring 162.6 hectares.
-          </p>
-          <button>READ MORE</button>
-        </div>
-        <div class="temple-image">
-          <img src="../assets/gallery/Angkor1.jpg" alt="" />
+            <p>
+              Angkor Wat is a temple complex in Cambodia and the largest
+              religious monument in the world, on a site measuring 162.6
+              hectares.
+            </p>
+            <button>READ MORE</button>
+          </div>
+          <div class="temple-image">
+            <img src="../assets/gallery/Angkor1.jpg" alt="" />
+          </div>
         </div>
 
         <!-- Bayon -->
-        <div class="temple-image">
-          <img src="../assets/gallery/Bayon1.jpg" alt="" />
-        </div>
-        <div class="temple-info">
-          <h1>Bayon Temple</h1>
-          <p>Opening hour: 07:30-17:30</p>
+        <div class="temple">
+          <div class="temple-image">
+            <img class="" src="../assets/gallery/Bayon1.jpg" alt="" />
+          </div>
+          <div class="temple-info">
+            <h1>Bayon Temple</h1>
+            <p>Opening hour: 07:30-17:30</p>
 
-          <p>
-            The Bayon is a well-known and richly decorated Khmer temple at
-            Angkor in Cambodia. Built in the late 12th or early 13th century as
-            the official state temple of the Mahayana Buddhist King Jayavarman
-            VII, ...
-          </p>
-          <button>READ MORE</button>
+            <p>
+              The Bayon is a well-known and richly decorated Khmer temple at
+              Angkor in Cambodia. Built in the late 12th or early 13th century
+              as the official state temple of the Mahayana Buddhist King
+              Jayavarman VII, ...
+            </p>
+            <button>READ MORE</button>
+          </div>
         </div>
 
         <!-- Bakheng -->
-        <div class="temple-info">
-          <h1>Bakheng Temple</h1>
-          <p>Opening hour: 07:30-17:30</p>
+        <div class="temple">
+          <div class="temple-info">
+            <h1>Bakheng Temple</h1>
+            <p>Opening hour: 07:30-17:30</p>
 
-          <p>
-            Phnom Bakheng at Angkor, Cambodia, is a Hindu and Buddhist temple in
-            the form of a temple mountain. Dedicated to Shiva, it was built at
-            the end of the 9th century, during the reign of King Yasovarman.
-            Phnom Bakheng at Angkor, Cambodia, is a Hindu and Buddhist temple in
-            the form of a temple mountain. Dedicated to Shiva, it was built at
-            the end of the 9th century, during the reign of King Yasovarman.
-          </p>
-          <button>READ MORE</button>
-        </div>
-        <div class="temple-image">
-          <img src="../assets/gallery/Bakheng.jpg" alt="" />
+            <p>
+              Phnom Bakheng at Angkor, Cambodia, is a Hindu and Buddhist temple
+              in the form of a temple mountain. Dedicated to Shiva, it was built
+              at the end of the 9th century, during the reign of King
+              Yasovarman. Phnom Bakheng at Angkor, Cambodia, is a Hindu and
+              Buddhist temple in the form of a temple mountain. Dedicated to
+              Shiva, it was built at the end of the 9th century, during the
+              reign of King Yasovarman.
+            </p>
+            <button>READ MORE</button>
+          </div>
+          <div class="temple-image">
+            <img src="../assets/gallery/Bakheng.jpg" alt="" />
+          </div>
         </div>
 
         <!-- Baphoun -->
-        <div class="temple-image">
-          <img src="../assets/gallery/Baphuon.jpg" alt="" />
-        </div>
-        <div class="temple-info">
-          <h1>Baphuon Temple</h1>
-          <p>Opening hour: 07:30-17:30</p>
+        <div class="temple">
+          <div class="temple-image">
+            <img src="../assets/gallery/Baphuon.jpg" alt="" />
+          </div>
+          <div class="temple-info">
+            <h1>Baphuon Temple</h1>
+            <p>Opening hour: 07:30-17:30</p>
 
-          <p>
-            The Baphuon is a temple at Angkor, Cambodia. It is located in Angkor
-            Thom, northwest of the Bayon. Built in the mid-11th century, it is a
-            three-tiered temple mountain built as the state temple of
-            Udayadityavarman II dedicated to the Hindu God Shiva.
-          </p>
-          <button>READ MORE</button>
-        </div>
-
-        <!-- Banteaysrey -->
-        <div class="temple-info">
-          <h1>Banteay Srei Temple</h1>
-          <p>Opening hour: 07:30-17:30</p>
-
-          <p>
-            Banteay Srei or Banteay Srey is a 10th-century Cambodian temple
-            dedicated to the Hindu god Shiva. Located in the area of Angkor, it
-            lies near the hill of Phnom Dei, 25 km north-east of the main group
-            ...
-          </p>
-          <button>READ MORE</button>
-        </div>
-        <div class="temple-image">
-          <img src="../assets/gallery/banteaysrei.jpg" alt="" />
+            <p>
+              The Baphuon is a temple at Angkor, Cambodia. It is located in
+              Angkor Thom, northwest of the Bayon. Built in the mid-11th
+              century, it is a three-tiered temple mountain built as the state
+              temple of Udayadityavarman II dedicated to the Hindu God Shiva.
+            </p>
+            <button>READ MORE</button>
+          </div>
         </div>
 
         <!-- Banteaysrey -->
-        <div class="temple-image">
-          <img src="../assets/gallery/pheah_khan.JPG" alt="" />
-        </div>
-        <div class="temple-info">
-          <h1>Preah Khan Temple</h1>
-          <p>Opening hour: 07:30-17:30</p>
+        <div class="temple">
+          <div class="temple-info">
+            <h1>Banteay Srei Temple</h1>
+            <p>Opening hour: 07:30-17:30</p>
 
-          <p>
-            Preah Khan is a temple at Angkor, Cambodia, built in the 12th
-            century for King Jayavarman VII to honor his father. It is located
-            northeast of Angkor Thom and just west of the Jayatataka baray, with
-            which it was associated.
-          </p>
-          <button>READ MORE</button>
+            <p>
+              Banteay Srei or Banteay Srey is a 10th-century Cambodian temple
+              dedicated to the Hindu god Shiva. Located in the area of Angkor,
+              it lies near the hill of Phnom Dei, 25 km north-east of the main
+              group ...
+            </p>
+            <button>READ MORE</button>
+          </div>
+          <div class="temple-image">
+            <img src="../assets/gallery/banteaysrei.jpg" alt="" />
+          </div>
+        </div>
+
+        <!-- Banteaysrey -->
+        <div class="temple">
+          <div class="temple-image">
+            <img src="../assets/gallery/pheah_khan.JPG" alt="" />
+          </div>
+          <div class="temple-info">
+            <h1>Preah Khan Temple</h1>
+            <p>Opening hour: 07:30-17:30</p>
+
+            <p>
+              Preah Khan is a temple at Angkor, Cambodia, built in the 12th
+              century for King Jayavarman VII to honor his father. It is located
+              northeast of Angkor Thom and just west of the Jayatataka baray,
+              with which it was associated.
+            </p>
+            <button>READ MORE</button>
+          </div>
         </div>
       </div>
 

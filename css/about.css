@@ -8,19 +8,12 @@
 
 .about {
   padding: 3.5rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   column-gap: 3.5rem;
 }
 
-.about-info {
-  flex: 1;
-}
-
-.about-image {
-  flex: 1;
-}
-
-.about .about-info p {
+.about-info p {
   line-height: 2.3rem;
   font-size: 1rem;
 }
@@ -30,4 +23,56 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .hero-section .about-text {
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem;
+  }
+
+  .about-info {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .hero-section .about-text {
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem;
+  }
+
+  .about-info {
+    margin-bottom: 1.5rem;
+  }
+
+  .about-info p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem;
+  }
+
+  .about-info p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
 }
