@@ -25,12 +25,6 @@ main {
 /*-- 1. IMAGE GALLERY --/
 /***********************/
 
-.gallery {
-  /* height: 100vh; */
-  /* padding-top: 2.5rem; */
-  /* scroll-snap-align: start; */
-}
-
 .gallery h1 {
   color: #fc9b00;
 }

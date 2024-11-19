@@ -27,16 +27,18 @@
 }
 
 .temple-info p {
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 
-.temple-info button {
+.temple-info .read-more {
   padding: 1rem 2.5rem;
   background: none;
   border: 2px solid #333;
+  text-decoration: none;
+  color: #555;
 }
 
-.temple-info button:hover {
+.temple-info .read-more:hover {
   cursor: pointer;
 }
 
