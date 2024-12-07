@@ -13,13 +13,13 @@
 /*-- 1. HERO SECTION  --/
 /***********************/
 
-main {
-  /* width: 100vw;
+/* main {
+  width: 100vw;
   height: 100vh;
 
   overflow-y: scroll;
-  scroll-snap-type: y mandatory; */
-}
+  scroll-snap-type: y mandatory;
+} */
 
 /***********************/
 /*-- 1. IMAGE GALLERY --/
@@ -128,13 +128,19 @@ main {
   margin-bottom: 1rem;
 }
 
-.local-product-top-gallery button {
+.button {
   border: 2px solid #555;
   padding: 0.5rem 3.5rem;
   background: none;
+  text-decoration: none;
+  color:#555;
+}
+.button:hover{
+  background: #737373;
+  color:#eee;
 }
 
-.top-gallery button:hover {
+.top-gallery .button:hover {
   cursor: pointer;
 }
 
