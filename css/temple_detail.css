@@ -56,7 +56,10 @@
 .temple-info p {
   margin-bottom: 1rem;
 }
-
+.temple-info ul{
+  margin-left:1rem;
+  margin-bottom: 1rem;
+}
 .temple-info button {
   padding: 1rem 2.5rem;
   background: none;

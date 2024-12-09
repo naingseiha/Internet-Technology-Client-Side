@@ -208,6 +208,9 @@ svg{
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
+.project-title{
+  text-transform: uppercase;
+}
 /* Mobile Responsive */
 @media (max-width: 640px) {
   .footer-content{

@@ -40,13 +40,13 @@
       <!-- <a href="#" class="logo">Logo</a> -->
       <nav class="nav">
         <ul class="navbar">
-          <li><a class="navbar-link" href="index.html">HOME</a></li>
-          <li><a class="navbar-link" href="temple.html">TEMPLES</a></li>
+          <li><a class="navbar-link" href="index.html" title="Home">HOME</a></li>
+          <li><a class="navbar-link" href="temple.html" title="Temples">TEMPLES</a></li>
           <li>
-            <a class="navbar-link" href="local_artisans.html">LOCAL ARTISANS</a>
+            <a class="navbar-link" href="local_artisans.html" title="Local artisans">LOCAL ARTISANS</a>
           </li>
-          <li><a class="navbar-link" href="contact.html">CONTACT US</a></li>
-          <li><a class="navbar-link" href="about.html">ABOUT US</a></li>
+          <li><a class="navbar-link" href="contact.html" title="Contact Us">CONTACT US</a></li>
+          <li><a class="navbar-link" href="about.html" title="About Us">ABOUT US</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -58,13 +58,13 @@
       <div class="hero-section">
         <div class="temple-text">
           <p>Temple</p>
-          <h1>Angkor Wat</h1>
+          <h1 id="templeTitle">Angkor Wat</h1>
           <div class="temple-text-info">
             <div class="open-hour">
               <ion-icon class="open-hour-icon" name="time"></ion-icon>
               <p>Opening Hours</p>
             </div>
-            <div class="open-close-text">
+            <div id="openHour" class="open-close-text">
               <p>Open: 07:30 AM</p>
               <p>Close: 17:30 PM</p>
             </div>
@@ -72,8 +72,7 @@
         </div>
       </div>
 
-      <div class="temples">
-        <!-- Angkor -->
+      <div class="temples" id="templeInfo">
         <div class="temple">
           <div class="temple-info">
             <p>
@@ -98,8 +97,6 @@
             <img src="../assets/gallery/angkor/shutterstock_744300268.jpg" alt="Angkor Wat temple" />
           </div>
         </div>
-
-        <!-- Bayon -->
         <div class="temple">
           <div class="temple-image">
             <img class="" src="../assets/gallery/angkor/angkor-wat-historic-temple-siem-reap-cambodia.jpg" alt="Angkor Wat historic temple" />
@@ -126,44 +123,43 @@
           <h1 class="project-title">TAKE A LOOK MORE</h1>
         </div>
         <div class="image-gallery">
-          <div class="image-container">
-            <img class="image" src="../assets/gallery/bakheng/5caac579a6cd7c1974870ddd12a0bc55.jpg" alt="Bakheng temple" />
+          <a class="image-container" id="templeLink1" href="./temple_details.html?temple=bakheng-temple" title="Bakheng temple">
+            <img class="image" id="templeImg1" src="../assets/gallery/bakheng/5caac579a6cd7c1974870ddd12a0bc55.jpg" alt="Bakheng temple" />
             <div class="gallery-text">
-              <h3>Bakheng</h3>
-              <p>
+              <h3 id="templeTitle1">Bakheng</h3>
+              <p id="templeInfo1" class="three-lines-text">
                 Phnom Bakheng at Angkor, Cambodia, is a Hindu and Buddhist
                 temple in the form of a temple mountain. Dedicated to Shiva, it
                 was built at the end of the 9th century, during the reign of
                 King Yasovarman. Phnom Bakheng at Angkor, Cambodia
               </p>
             </div>
-          </div>
+          </a>
 
-          <div class="image-container">
-            <img class="image" src="../assets/gallery/angkor/angkor-wat-historic-temple-siem-reap-cambodia.jpg" alt="Angkor Wat temple" />
+          <a class="image-container" id="templeLink2" href="./temple_details.html?temple=angkor-wat" title="Angkor Wat">
+            <img class="image" id="templeImg2" src="../assets/gallery/angkor/angkor-wat-historic-temple-siem-reap-cambodia.jpg" alt="Angkor Wat temple" />
             <div class="gallery-text">
-              <h3>Angkor Wat Temple</h3>
-              <p>
-                Phnom Bakheng at Angkor, Cambodia, is a Hindu and Buddhist
-                temple in the form of a temple mountain. Dedicated to Shiva, it
-                was built at the end of the 9th century, during the reign of
-                King Yasovarman. Phnom Bakheng at Angkor, Cambodia
+              <h3 id="templeTitle2">Angkor Wat Temple</h3>
+              <p id="templeInfo2" class="three-lines-text">
+                Angkor Wat is a temple complex in Cambodia and the largest
+                  religious monument in the world, on a site measuring 162.6
+                  hectares.
               </p>
             </div>
-          </div>
+          </a>
 
-          <div class="image-container">
-            <img class="image" src="../assets/gallery/bayon/bayon-temple-with-giant-stone-faces-angkor-wat-siem-reap-cambodia-1.jpg" alt="Bayon temple" />
+          <a class="image-container" id="templeLink3" href="./temple_details.html?temple=bayon-temple" title="Bayon temple">
+            <img class="image" id="templeImg3" src="../assets/gallery/bayon/bayon-temple-with-giant-stone-faces-angkor-wat-siem-reap-cambodia-1.jpg" alt="Bayon temple" />
             <div class="gallery-text">
-              <h3>Bayon Temple</h3>
-              <p>
-                Phnom Bakheng at Angkor, Cambodia, is a Hindu and Buddhist
-                temple in the form of a temple mountain. Dedicated to Shiva, it
-                was built at the end of the 9th century, during the reign of
-                King Yasovarman. Phnom Bakheng at Angkor, Cambodia
+              <h3 id="templeTitle3">Bayon Temple</h3>
+              <p id="templeInfo3" class="three-lines-text">
+                The Bayon is a well-known and richly decorated Khmer temple at
+                  Angkor in Cambodia. Built in the late 12th or early 13th century
+                  as the official state temple of the Mahayana Buddhist King
+                  Jayavarman VII.
               </p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
 
@@ -172,26 +168,26 @@
           <h1 class="project-title">YOU MAY INTEREST</h1>
         </div>
         <div class="product-gallery">
-          <div class="product-container">
+          <a class="product-container" href="./local_artisan_detail.html?product=cambodia-silk" title="Cambodia Silk">
             <img class="image" src="../assets/gallery/products/silk.jpg" alt="Cambodia silk" />
             <div class="product-info">
               <h3>Cambodia Silk</h3>
             </div>
-          </div>
+          </a>
 
-          <div class="product-container">
+          <a class="product-container" href="./local_artisan_detail.html?product=krama" title="Krama">
             <img class="image" src="../assets/gallery/products/krama.jpg" alt="Krama" />
             <div class="product-info">
               <h3>Krama</h3>
             </div>
-          </div>
+          </a>
 
-          <div class="product-container">
+          <a class="product-container" href="./local_artisan_detail.html?product=sculpture-reproductions" title="Sculpture Reproductions">
             <img class="image" src="../assets/gallery/products/angkor-wat-sculpture-reproductions.jpg" alt="Sculpture reproductions" />
             <div class="product-info">
               <h3>Sculpture Reproductions</h3>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </main>
