@@ -95,10 +95,19 @@
 .evisa {
   padding: 3.5rem 0;
   text-align: center;
-
   background: #f6b855;
+  svg{
+    fill:red;
+    width: 120px;
+    margin-left:1rem;
+    margin-bottom:1rem;
+  }
 }
-
+.evisa-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .evisa h3 {
   color: white;
   font-size: 1.6rem;
@@ -182,16 +191,26 @@
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
 /***********************/
 /*-- FOOTER --/
 /***********************/
 
-.footer {
-  background: #eee;
+/* .footer {
+  background: #606060;
   height: 12rem;
-}
+  color:white;
+  padding:3rem;
 
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+svg{
+  width:40px;
+  fill:white;
+} */
 /***********************/
 /*-- MOBILE RESPONSIVE -/
 /***********************/

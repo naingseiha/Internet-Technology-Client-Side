@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Group Project 2024-2025</title>
-    <link rel="stylesheet" href="../css/general.css" />
-    <link rel="stylesheet" href="../css/temple.css" />
+    <link rel="stylesheet" href="../../css/general.css" />
+    <link rel="stylesheet" href="../../css/temple_detail.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +29,7 @@
       src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
     ></script>
 
-    <script defer src="../js/script.js"></script>
+    <script defer src="../../js/script.js"></script>
   </head>
   <body>
     <div class="status">
@@ -40,13 +40,13 @@
       <!-- <a href="#" class="logo">Logo</a> -->
       <nav class="nav">
         <ul class="navbar">
-          <li><a class="navbar-link" href="index.html">HOME</a></li>
-          <li><a class="navbar-link" href="temple.html">TEMPLES</a></li>
+          <li><a class="navbar-link" href="../index.html">HOME</a></li>
+          <li><a class="navbar-link" href="../temple.html">TEMPLES</a></li>
           <li>
-            <a class="navbar-link" href="local_artisans.html">LOCAL ARTISANS</a>
+            <a class="navbar-link" href="../local_artisans.html">LOCAL ARTISANS</a>
           </li>
-          <li><a class="navbar-link" href="contact.html">CONTACT US</a></li>
-          <li><a class="navbar-link" href="about.html">ABOUT US</a></li>
+          <li><a class="navbar-link" href="../contact.html">CONTACT US</a></li>
+          <li><a class="navbar-link" href="../about.html">ABOUT US</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -57,150 +57,136 @@
     <main>
       <div class="hero-section">
         <div class="temple-text">
-          <h1>TEMPLES</h1>
+          <p>Temple</p>
+          <h1>Angkor Wat</h1>
+          <div class="temple-text-info">
+            <div class="open-hour">
+              <ion-icon class="open-hour-icon" name="time"></ion-icon>
+              <p>Opening Hours</p>
+            </div>
+            <div class="open-close-text">
+              <p>Open: 07:30 AM</p>
+              <p>Close: 17:30 PM</p>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="temples">
-        <!-- Angkor -->
         <div class="temple">
           <div class="temple-info">
-            <h1>Angkor Wat</h1>
-            <p>Opening hour: 07:30-17:30</p>
-
             <p>
-              Angkor Wat is a temple complex in Cambodia and the largest
-              religious monument in the world, on a site measuring 162.6
-              hectares.
+              <strong>Angkor Wat</strong> is a temple complex in Cambodia and
+              the largest religious monument in the world, on a site measuring
+              162.6 hectares (1,626,000 m2; 402 acres). It was originally
+              constructed as a Hindu temple dedicated to the god Vishnu for the
+              Khmer Empire, gradually transforming into a Buddhist temple
+              towards the end of the 12th century. It was built by the Khmer
+              King Suryavarman II in the early 12th century in Yaśodharapura,
+              the capital of the Khmer Empire, as his state temple and eventual
+              mausoleum. Breaking from the Shaiva tradition of previous kings,
+              Angkor Wat was instead dedicated to Vishnu. As the best-preserved
+              temple at the site, it is the only one to have remained a
+              significant religious centre since its foundation. The temple is
+              at the top of the high classical style of Khmer architecture. It
+              has become a symbol of Cambodia, appearing on its national flag,
+              and it is the country\'s prime attraction for visitors.
             </p>
-
-            <a class="read-more" href="./temple_detail/angkor_wat.html">READ MORE</a>
           </div>
           <div class="temple-image">
-            <img src="../assets/gallery/angkor/angkor-wat-historic-temple-siem-reap-cambodia.jpg" alt="Angkor Wat" />
+            <img src="../../assets/gallery/angkor/shutterstock_744300268.jpg" alt="Angkor Wat temple" />
           </div>
         </div>
 
         <!-- Bayon -->
         <div class="temple">
           <div class="temple-image">
-            <img class="" src="../assets/gallery/bayon/bayon-temple-with-giant-stone-faces-angkor-wat-siem-reap-cambodia-1.jpg" alt="Bayon temple" />
+            <img class="" src="../../assets/gallery/angkor/angkor-wat-historic-temple-siem-reap-cambodia.jpg" alt="Angkor Wat historic temple" />
           </div>
           <div class="temple-info">
-            <h1>Bayon Temple</h1>
-            <p>Opening hour: 07:30-17:30</p>
-
             <p>
-              The Bayon is a well-known and richly decorated Khmer temple at
-              Angkor in Cambodia. Built in the late 12th or early 13th century
-              as the official state temple of the Mahayana Buddhist King
-              Jayavarman VII, ...
+              Angkor Wat combines two basic plans of Khmer temple architecture:
+              the temple-mountain and the later galleried temple. It is designed
+              to represent Mount Meru, home of the devas in Hindu mythology:
+              within a moat and an outer wall 3.6 kilometres (2.2 mi) long are
+              three rectangular galleries, each raised above the next. At the
+              centre of the temple stands a quincunx of towers. Unlike most
+              Angkorian temples, Angkor Wat is oriented to the west; scholars
+              are divided as to the significance of this. The temple is admired
+              for the grandeur and harmony of the architecture, its extensive
+              bas-reliefs, and for the numerous devatas adorning its walls.
             </p>
-            <a class="read-more" href="./temple_detail/bayon_temple.html">READ MORE</a>
           </div>
         </div>
+      </div>
 
-        <!-- Bakheng -->
-        <div class="temple">
-          <div class="temple-info">
-            <h1>Bakheng Temple</h1>
-            <p>Opening hour: 17:00-19:30</p>
-
-            <p>
-              Phnom Bakheng at Angkor, Cambodia, is a Hindu and Buddhist temple
-              in the form of a temple mountain. Dedicated to Shiva, it was built
-              at the end of the 9th century, during the reign of King
-              Yasovarman. Phnom Bakheng at Angkor, Cambodia, is a Hindu and
-              Buddhist temple in the form of a temple mountain. Dedicated to
-              Shiva, it was built at the end of the 9th century, during the
-              reign of King Yasovarman.
-            </p>
-            <a class="read-more" href="./temple_detail/bekheng_temple.html">READ MORE</a>
-          </div>
-          <div class="temple-image">
-            <img src="../assets/gallery/bakheng/5caac579a6cd7c1974870ddd12a0bc55.jpg" alt="Bakheng temple" />
-          </div>
+      <div class="gallery">
+        <div class="top-gallery">
+          <h1 class="project-title">TAKE A LOOK MORE</h1>
         </div>
+        <div class="image-gallery">
+          <a class="image-container" href="./bekheng_temple.html">
+            <img class="image" src="../../assets/gallery/bakheng/5caac579a6cd7c1974870ddd12a0bc55.jpg" alt="Bakheng temple" />
+            <div class="gallery-text">
+              <h3>Bakheng</h3>
+              <p class="three-lines-text">
+                Phnom Bakheng at Angkor, Cambodia, is a Hindu and Buddhist
+                temple in the form of a temple mountain. Dedicated to Shiva, it
+                was built at the end of the 9th century, during the reign of
+                King Yasovarman.
+              </p>
+            </div>
+            </a>
 
-        <!-- Baphoun -->
-        <div class="temple">
-          <div class="temple-image">
-            <img src="../assets/gallery/baphoun/1da1e30ef7bff1f40533f669679e926d.jpg" alt="Baphoun temple" />
-          </div>
-          <div class="temple-info">
-            <h1>Baphuon Temple</h1>
-            <p>Opening hour: 07:30-17:30</p>
-
-            <p>
-              The Baphuon is a temple at Angkor, Cambodia. It is located in
-              Angkor Thom, northwest of the Bayon. Built in the mid-11th
-              century, it is a three-tiered temple mountain built as the state
-              temple of Udayadityavarman II dedicated to the Hindu God Shiva.
-            </p>
-            <a class="read-more" href="./temple_detail/baphuon_temple.html">READ MORE</a>
-          </div>
-        </div>
-
-        <!-- Banteaysrey -->
-        <div class="temple">
-          <div class="temple-info">
-            <h1>Banteay Srei Temple</h1>
-            <p>Opening hour: 07:30-17:30</p>
-
-            <p>
-              Banteay Srei or Banteay Srey is a 10th-century Cambodian temple
-              dedicated to the Hindu god Shiva. Located in the area of Angkor,
-              it lies near the hill of Phnom Dei, 25 km north-east of the main
-              group ...
-            </p>
-            <a class="read-more" href="./temple_detail/banteay_srei_temple.html">READ MORE</a>
-          </div>
-          <div class="temple-image">
-            <img src="../assets/gallery/banteay-srei-temple/378a4264cf0b258c83b24f067206249e.jpg" alt="Banteay Srei temple" />
-          </div>
-        </div>
-
-        <!-- Preah Khan temple -->
-        <div class="temple">
-          <div class="temple-image">
-            <img src="../assets/gallery/preah-khan/39858621495_4c4aa70dc3_b.jpg" alt="Preah Khan temple" />
-          </div>
-          <div class="temple-info">
-            <h1>Preah Khan Temple</h1>
-            <p>Opening hour: 07:30-17:30</p>
-
-            <p>
-              Preah Khan is a temple at Angkor, Cambodia, built in the 12th
+          <a class="image-container" href="./preah_khan_temple.html">
+            <img class="image" src="../../assets/gallery/preah-khan/39858621495_4c4aa70dc3_b.jpg" alt="Preah khan temple" />
+            <div class="gallery-text">
+              <h3>Preah khan Temple</h3>
+              <p class="three-lines-text">
+                Preah Khan is a temple at Angkor, Cambodia, built in the 12th
               century for King Jayavarman VII to honor his father. It is located
               northeast of Angkor Thom and just west of the Jayatataka baray,
               with which it was associated.
-            </p>
-            <a class="read-more" href="./temple_detail/preah_khan_temple.html">READ MORE</a>
-          </div>
+              </p>
+            </div>
+        </a>
+
+          <a class="image-container" href="./bayon_temple.html">
+            <img class="image" src="../../assets/gallery/bayon/bayon-temple-with-giant-stone-faces-angkor-wat-siem-reap-cambodia-1.jpg" alt="Bayon temple" />
+            <div class="gallery-text">
+              <h3>Bayon Temple</h3>
+              <p class="three-lines-text">
+                The Bayon is a well-known and richly decorated Khmer temple at
+              Angkor in Cambodia. Built in the late 12th or early 13th century
+              as the official state temple of the Mahayana Buddhist King
+              Jayavarman VII.
+              </p>
+            </div>
+        </a>
         </div>
       </div>
 
       <div class="local-product">
         <div class="local-product-top-gallery">
-          <h1 class="project-title">WHAT YOU MUST BUY</h1>
+          <h1 class="project-title">YOU MAY INTEREST</h1>
         </div>
         <div class="product-gallery">
           <div class="product-container">
-            <img class="image" src="../assets/gallery/products/silk.jpg" alt="Cambodia silk" />
+            <img class="image" src="../../assets/gallery/products/silk.jpg" alt="Cambodia silk" />
             <div class="product-info">
               <h3>Cambodia Silk</h3>
             </div>
           </div>
 
           <div class="product-container">
-            <img class="image" src="../assets/gallery/products/krama.jpg" alt="Krama" />
+            <img class="image" src="../../assets/gallery/products/krama.jpg" alt="Krama" />
             <div class="product-info">
               <h3>Krama</h3>
             </div>
           </div>
 
           <div class="product-container">
-            <img class="image" src="../assets/gallery/products/angkor-wat-sculpture-reproductions.jpg" alt="Sculpture reporduction" />
+            <img class="image" src="../../assets/gallery/products/angkor-wat-sculpture-reproductions.jpg" alt="Sculpture reproductions" />
             <div class="product-info">
               <h3>Sculpture Reproductions</h3>
             </div>
