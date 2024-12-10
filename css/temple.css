@@ -85,13 +85,13 @@
   padding: 1.5rem 3.5rem;
 }
 
-.product-container {
+.h-product-container {
   margin-bottom: 20px;
   height: 19rem;
   position: relative;
 }
 
-.product-container .product-info {
+.h-product-container .product-info {
   position: absolute;
   left: 0;
   bottom: 0;
