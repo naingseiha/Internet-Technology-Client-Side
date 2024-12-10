@@ -134,13 +134,13 @@
   padding: 1.5rem 3.5rem;
 }
 
-.image-container {
+.h-image-container {
   margin-bottom: 20px;
   height: 32rem;
   position: relative;
 }
 
-.image-container .image {
+.h-image-container .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -151,7 +151,7 @@
   opacity: 0.9;
 }
 
-.image-container .gallery-text {
+.h-image-container .gallery-text {
   position: absolute;
   bottom: 0rem;
   left: 0rem;
@@ -194,7 +194,7 @@
     padding: 0.5rem;
   }
 
-  .image-container {
+  .h-image-container {
     height: 12rem;
   }
 
@@ -239,7 +239,7 @@
     padding: 0.5rem;
   }
 
-  .image-container {
+  .h-image-container {
     height: 19rem;
   }
 
@@ -282,7 +282,7 @@
     padding: 0.5rem;
   }
 
-  .image-container {
+  .h-image-container {
     height: 27rem;
   }
 
@@ -326,7 +326,7 @@
     padding: 0.5rem;
   }
 
-  .image-container {
+  .h-image-container {
     height: 19rem;
   }
 
